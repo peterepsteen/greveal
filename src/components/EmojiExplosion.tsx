@@ -23,7 +23,7 @@ interface EmojiExplosionProps {
 }
 
 const BURST_INTERVAL = 2250; // ms
-const EMOJIS_PER_BURST = 30;
+const EMOJIS_PER_BURST = 15;
 const INITIAL_EMOJIS = 30; // Special initial burst
 const EMOJI_LIFETIME = 15000; // ms
 
