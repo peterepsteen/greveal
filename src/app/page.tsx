@@ -37,13 +37,15 @@ export default function Home() {
   return (
     <motion.main 
       className="min-h-screen flex flex-col items-center justify-center p-4"
-      initial={{ background: 'linear-gradient(to bottom, rgb(255, 192, 203, 0.2), rgb(216, 191, 216, 0.2))' }}
-      animate={{ 
-        background: showMessage 
-          ? 'linear-gradient(to bottom, rgb(147, 197, 253, 0.4), rgb(96, 165, 250, 0.4))'
-          : 'linear-gradient(to bottom, rgb(255, 192, 203, 0.2), rgb(216, 191, 216, 0.2))'
+      initial={{
+        background: 'rgb(229 231 235)'
       }}
-      transition={{ duration: 1.5, ease: "easeInOut" }}
+      animate={{
+        background: showMessage
+          ? 'rgb(147 197 253)'
+          : 'rgb(229 231 235)'
+      }}
+      transition={{ duration: 1.5, ease: 'easeInOut' }}
     >
       <AnimatePresence mode="wait">
         {!showCountdown && !showMessage && (
